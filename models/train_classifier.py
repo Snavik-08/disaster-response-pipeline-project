@@ -54,7 +54,7 @@ def load_data(database_filepath):
     df = pd.read_sql_table("InsertTableName", engine)
     X = df["message"]
     Y = df.loc[:,~df.columns.isin(["id", "message" ,"original", "genre"])]
-    
+    return X,Y
     
 
 
