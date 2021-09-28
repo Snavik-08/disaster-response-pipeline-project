@@ -8,16 +8,21 @@ This is a Project that is required as a task for the Udacity Data Science Nanode
 ### File Descriptions
 app
 
-| - template
-| |- master.html 
-| |- go.html 
-|- run.py 
+| - template 
+
+| |- master.html  
+
+| |- go.html  
+
+|- run.py  
 
 
 data
 
 |- disaster_categories.csv 
+
 |- disaster_messages.csv
+
 |- process_data.py 
 
 
