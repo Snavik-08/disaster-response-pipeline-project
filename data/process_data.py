@@ -73,14 +73,15 @@ def cleaning_data(df):
     df.drop(df[df.duplicated()].index, inplace= True)
     return(df)
     
-def save_df(df, db_path):
+def save_df(df, database_filepath):
     """
     Saves data in SQLite db
     """
-    engine = create_engine(f'sqlite:///{db_path}')
-    df.to_sql('InsertTableName', engine, index=False, if_exists='replace')
+    engine = create_engine(f'sqlite:///{database_filepath}')
+    df.to_sql('disaster_messages', engine, index=False, if_exists='replace')
     
     
+
     
 def main():
     if len(sys.argv) == 4:
