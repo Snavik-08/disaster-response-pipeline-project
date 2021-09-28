@@ -1,5 +1,60 @@
 # Disaster Response Pipeline Project
 
+
+### Project Motivation
+This is a Project that is required as a task for the Udacity Data Science Nanodegree Program. It is an app that can be used in emergency situation where individuals post emergency messages in the app that are then classified based on their wording. The results of the emergency message classification is then displayed within a web app based on flask. 
+
+
+### File Descriptions
+app
+
+| - template
+| |- master.html # main page of web app
+| |- go.html # classification result page of web app
+|- run.py # Flask file that runs app
+
+data
+
+|- disaster_categories.csv # data to process
+|- disaster_messages.csv # data to process
+|- process_data.py # data cleaning pipeline
+|- InsertDatabaseName.db # database to save clean data to
+
+models
+
+|- train_classifier.py # machine learning pipeline
+|- classifier.pkl # saved model
+
+README.md
+
+
+### Components
+There are three components for this Project
+
+#### 1. ETL Pipeline
+A Python script, process_data.py, writes a data cleaning pipeline that:
+
+-- Loading of the messages and its catagories DBs. This is merged and used as train DF. 
+-- Cleaning and formatting for later training
+-- Saves cleaned DF in SQLite DB
+
+
+#### 2. ML Pipeline
+A Python script, train_classifier.py, writes a machine learning pipeline that:
+
+-- Loading Data from a SQLite DB
+-- Splitting in Train and Test Data
+-- Creates a Pipeline where data is processed and used for training
+-- Training is done via Grid Search Optimization that is also included in the pipeline
+-- Evaluates Model performance on a test set
+-- Exports train model as pickle file
+-- A jupyter notebook ML Pipeline Preparation was used to do EDA to prepare the train_classifier.py python script.
+
+
+#### 3. Flask Web App
+The UI of this project is a flask web app where messages can be posted that then are calssified based on there emergency type.
+
+
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
