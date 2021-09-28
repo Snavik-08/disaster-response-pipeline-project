@@ -51,7 +51,7 @@ def load_data(database_filepath):
     # load data from database
     engine = create_engine(f'sqlite:///{database_filepath}')
     #engine.execute("SELECT * FROM InsertDatabaseName").fetchall()
-    df = pd.read_sql_table("InsertTableName", engine)
+    df = pd.read_sql_table("disaster_messages", engine)
     X = df["message"]
     Y = df.loc[:,~df.columns.isin(["id", "message" ,"original", "genre"])]
     return X,Y
