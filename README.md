@@ -9,21 +9,21 @@ This is a Project that is required as a task for the Udacity Data Science Nanode
 app
 
 | - template
-| |- master.html # main page of web app
-| |- go.html # classification result page of web app
-|- run.py # Flask file that runs app
+| |- master.html 
+| |- go.html 
+|- run.py 
+
 
 data
 
-|- disaster_categories.csv # data to process
-|- disaster_messages.csv # data to process
-|- process_data.py # data cleaning pipeline
-|- InsertDatabaseName.db # database to save clean data to
+|- disaster_categories.csv 
+|- disaster_messages.csv
+|- process_data.py 
+
 
 models
 
-|- train_classifier.py # machine learning pipeline
-|- classifier.pkl # saved model
+|- train_classifier.py  
 
 README.md
 
