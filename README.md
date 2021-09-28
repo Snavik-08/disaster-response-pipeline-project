@@ -34,21 +34,21 @@ There are three components for this Project
 #### 1. ETL Pipeline
 A Python script, process_data.py, writes a data cleaning pipeline that:
 
--- Loading of the messages and its catagories DBs. This is merged and used as train DF. 
--- Cleaning and formatting for later training
--- Saves cleaned DF in SQLite DB
+- Loading of the messages and its catagories DBs. This is merged and used as train DF. 
+- Cleaning and formatting for later training
+- Saves cleaned DF in SQLite DB
 
 
 #### 2. ML Pipeline
 A Python script, train_classifier.py, writes a machine learning pipeline that:
 
--- Loading Data from a SQLite DB
--- Splitting in Train and Test Data
--- Creates a Pipeline where data is processed and used for training
--- Training is done via Grid Search Optimization that is also included in the pipeline
--- Evaluates Model performance on a test set
--- Exports train model as pickle file
--- A jupyter notebook ML Pipeline Preparation was used to do EDA to prepare the train_classifier.py python script.
+- Loading Data from a SQLite DB
+- Splitting in Train and Test Data
+- Creates a Pipeline where data is processed and used for training
+- Training is done via Grid Search Optimization that is also included in the pipeline
+- Evaluates Model performance on a test set
+- Exports train model as pickle file
+- A jupyter notebook ML Pipeline Preparation was used to do EDA to prepare the train_classifier.py python script.
 
 
 #### 3. Flask Web App
