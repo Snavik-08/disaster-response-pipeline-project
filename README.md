@@ -6,7 +6,7 @@ This is a Project that is required as a task for the Udacity Data Science Nanode
 
 
 ### File Descriptions
-app
+*app*
 
 | - template 
 
@@ -17,7 +17,7 @@ app
 |- run.py  
 
 
-data
+*data*
 
 |- disaster_categories.csv 
 
@@ -26,7 +26,7 @@ data
 |- process_data.py 
 
 
-models
+*models*
 
 |- train_classifier.py  
 
