@@ -95,7 +95,7 @@ def build_model():
     return(cv)
 
 
-def evaluate_model(model, X_test, Y_test, category_names):
+def evaluate_model(model, X_test, Y_test):
     
     def test_model(y_test, y_pred):
         """
